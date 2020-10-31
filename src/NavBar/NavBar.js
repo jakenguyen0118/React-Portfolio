@@ -8,6 +8,7 @@ import {
 	NavItem,
 	NavLink,
 } from 'reactstrap'
+import './navbar.scss'
 
 const NavBar = () => {
 	// utilized Reactstrap for navbar
@@ -17,31 +18,33 @@ const NavBar = () => {
 
 	return (
 		<>
-			<Navbar
-				color='faded'
-				light
-				className='color-nav'
-				sticky='top'
-				expand='lg'>
+			<Navbar color='faded' light sticky='top' expand='md'>
 				<NavbarBrand href='/' className='mr-auto'>
-                    <h3>Jake Nguyen <span>// Full Stack Developer</span> </h3>
+					<h4>
+						Jake Nguyen <span>// Full Stack Developer</span>{' '}
+					</h4>
 				</NavbarBrand>
 				<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 				<Collapse isOpen={!collapsed} navbar>
-					<Nav navbar>
+					<Nav className='ml-auto' navbar>
 						<NavItem>
-							<NavLink href='#'>
-								<b>Home</b>&nbsp;
+							<NavLink href='#home'>
+								<b className='home-nav'>Home</b>&nbsp;
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href='#'>
+							<NavLink href='#aboutme'>
 								<b>About</b>&nbsp;
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href='#'>
+							<NavLink href='#projects'>
 								<b>Projects</b>&nbsp;
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink href='#contact'>
+								<b>Contact</b>&nbsp;
 							</NavLink>
 						</NavItem>
 					</Nav>

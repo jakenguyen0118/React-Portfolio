@@ -18,8 +18,11 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "react-spring": "^8.0.19",
+    "react-three-fiber": "^4.0.8",
     "reactstrap": "^8.7.0",
     "sass": "^1.28.0",
+    "three": "^0.102.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
