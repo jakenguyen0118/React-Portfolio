@@ -18,7 +18,7 @@ const About = () => {
 					</div>
 					<div>
 						<i className='fab fa-js-square fa-2x'></i>
-						<p>JavaScript</p>
+						<p>Javascript</p>
 					</div>
 					<div>
 						<i className='fab fa-node-js fa-2x'></i>
