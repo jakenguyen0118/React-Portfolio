@@ -1,7 +1,11 @@
 .projects-container {
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    
+    .project:last-child {
+        margin-bottom: 10px;
+    }
 
 	.project {
 		height: 400px;
@@ -13,7 +17,11 @@
 
 @media screen and (min-width: 768px) {
 	.projects-container {
-		grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        
+        .project:last-child {
+            margin-bottom: 0;
+        }
 
 		.project:nth-child(odd) {
 			margin-left: 10px;
