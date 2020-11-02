@@ -21,9 +21,33 @@ h3 {
     }
 }
 
+.jake {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+
+    .pic {
+        grid-column: 1 / 2;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat, repeat;
+        height: 400px;
+    }
+
+    div {
+        grid-column: 2 / 3;
+        width: 100%;
+    }
+}
+
 @media screen and (min-width:768px){
     h3 {
         font-size: 2em;
+    }
+
+    .jake {
+        margin: 10px 20px 10px 20px;
     }
 }
 

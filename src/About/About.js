@@ -10,7 +10,16 @@ const About = () => {
 		<>
 			<div className='about-me'>
 				<h3 id='aboutme'>About Me</h3>
-				<div className='jake'></div>
+				<div className='jake'>
+					<div
+						className='pic'
+						style={{
+							backgroundImage: 'url(https://i.imgur.com/uCzjr9m.jpg)',
+						}}>
+						{/* <img src='https://i.imgur.com/uCzjr9m.jpg' alt='about pic' /> */}
+					</div>
+					<div>hi</div>
+				</div>
 				<div className='skills'>
 					<div>
 						<i className='fab fa-react fa-2x'></i>
@@ -26,7 +35,7 @@ const About = () => {
 					</div>
 					<div>
 						<Icon icon={mongodbIcon} fontSize='2em' />
-                        <p>MongoDB</p>
+						<p>MongoDB</p>
 					</div>
 					<div>
 						<Icon icon={languageRubyOnRails} fontSize='2em' />

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import './projects.scss'
 import Tabletop from 'tabletop'
+import { motion, AnimatePresence, AnimateSharedLayout } from 'framer-motion'
 
 const Projects = () => {
 	const [projects, setProjects] = useState([])
+	const [selectedId, setSelectedId] = useState(null)
 
 	useEffect(() => {
 		Tabletop.init({
@@ -14,20 +16,31 @@ const Projects = () => {
 			.catch((err) => console.warn(err))
 	}, [])
 
-	let project = projects.map((project, index) => {
-		return (
-			<div
-				className='project'
-				style={{ backgroundImage: `url(${project.Image})` }}>
-				{/* <h5>{project.Title}</h5>
-                <p>{project.Description}</p> */}
-			</div>
-		)
-	})
+	// let project = projects.map((project, index) => {
+	// 	return (
+	// 		<div
+	// 			className='project'
+	// 			style={{ backgroundImage: `url(${project.Image})` }}>
+	// 			{/* <h5>{project.Title}</h5>
+	//             <p>{project.Description}</p> */}
+	// 		</div>
+	// 	)
+	// })
 
 	return (
 		<div className='projects-container'>
-			{project}
+			<AnimateSharedLayout type='crossfade'>
+				{projects.map((project) => (
+					<motion.div
+						className='project'
+						layoutId={project.id}
+						style={{ backgroundImage: `url(${project.Image})` }}
+						onClick={() => setSelectedId(project.id)}>
+						{/* <motion.h5>{project.Title}</motion.h5>
+						<motion.p>{project.Description}</motion.p> */}
+					</motion.div>
+				))}
+			</AnimateSharedLayout>
 		</div>
 	)
 }
