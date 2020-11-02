@@ -22,6 +22,7 @@
     "react-three-fiber": "^4.0.8",
     "reactstrap": "^8.7.0",
     "sass": "^1.28.0",
+    "tabletop": "^1.6.3",
     "three": "^0.102.1",
     "web-vitals": "^0.2.4"
   },

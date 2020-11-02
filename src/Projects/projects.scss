@@ -1,0 +1,26 @@
+.projects-container {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr;
+
+	.project {
+		height: 400px;
+		background-position: center;
+		background-repeat: no-repeat, repeat;
+		background-size: contain;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.projects-container {
+		grid-template-columns: 1fr 1fr;
+
+		.project:nth-child(odd) {
+			margin-left: 10px;
+		}
+
+		.project:nth-child(even) {
+			margin-right: 10px;
+		}
+	}
+}

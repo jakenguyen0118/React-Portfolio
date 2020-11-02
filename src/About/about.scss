@@ -10,6 +10,10 @@ h3 {
     justify-content: space-evenly;
     margin: 10px 20px 10px 20px;
 
+    div {
+        margin: 8px;
+    }
+
     p {
         margin: 0;
         font-family: 'PT Sans', sans-serif;
@@ -19,7 +23,7 @@ h3 {
 
 @media screen and (min-width:768px){
     h3 {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 
@@ -27,11 +31,11 @@ h3 {
     .skills {
 
         i {
-            font-size: 4em;
+            font-size: 3em;
         }
 
         svg {
-            font-size: 4em;
+            font-size: 3em;
         }
     }
 }
