@@ -1,34 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 .projects-container {
+	font-family: 'Montserrat', sans-serif;
 	display: grid;
 	grid-gap: 10px;
-    grid-template-columns: 1fr;
-    
-    .project:last-child {
-        margin-bottom: 10px;
-    }
+	grid-template-columns: 1fr;
+
+	.project:last-child {
+		margin-bottom: 10px;
+	}
 
 	.project {
-		height: 400px;
-		background-position: center;
-		background-repeat: no-repeat, repeat;
-		background-size: contain;
-	}
+		h4 {
+            color: #37393A;
+        }
+        
+        img {
+            width: 320px;
+            border-radius: 10px;
+        }
+
+		p {
+            color: #37393A;
+            width: 300px;
+            margin: 10px auto;
+        }
+        
+        div {
+            button {
+                margin: 10px;
+                border-style: none;
+                border-radius: 10px;
+                width: 100px;
+                height: 35px;
+                color: #E5E5E5;
+                background-color: #37393A;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
 	.projects-container {
-        grid-template-columns: 1fr 1fr;
-        
-        .project:last-child {
-            margin-bottom: 0;
-        }
-
-		.project:nth-child(odd) {
-			margin-left: 10px;
+		.project {
+			margin-top: 10px;
+            margin-bottom: 10px;
+            
+            img {
+                width: 450px;
+                margin: 0 auto;
+            }
 		}
 
-		.project:nth-child(even) {
-			margin-right: 10px;
+		// .project:nth-child(odd) {
+		// 	margin-left: 10px;
+		// }
+
+		// .project:nth-child(even) {
+		// 	margin-right: 10px;
+		// }
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.projects-container {
+		grid-gap: 0;
+
+		.project {
+			margin: 10px;
 		}
 	}
 }

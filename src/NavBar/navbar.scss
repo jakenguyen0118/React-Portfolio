@@ -5,38 +5,40 @@ nav {
     background-color: #37393A;
 
 	h4 {
-		font-size: 22px;
+		font-size: 2rem;
 		color: #55868c;
 
 		span {
-            font-size: 16px;
+            font-size: 1rem;
             color: #E5E5E5;
 		}
 	}
 
 	a.nav-link {
+		font-size: 1.5rem;
+
 		b {
 			color: #55868c;
 		}
-
-		b:active {
-			color: #a99985;
-		}
 	}
+}
+
+.navbar-light .navbar-toggler {
+	background-color: #E5E7E6;
 }
 
 @media screen and (min-width: 768px) {
 	nav {
 		h4 {
-			font-size: 36px;
+			font-size: 2rem;
 
 			span {
-				font-size: 24px;
+				font-size: 1.5rem;
 			}
 		}
 
 		a.nav-link {
-			font-size: 24px;
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -44,10 +46,10 @@ nav {
 @media screen and (min-width: 1440px) {
     nav {
 		h4 {
-			font-size: 4rem;
+			font-size: 2.5rem;
 
 			span {
-				font-size: 2rem;
+				font-size: 1.5rem;
 			}
 		}
 

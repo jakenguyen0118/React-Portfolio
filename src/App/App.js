@@ -16,7 +16,7 @@ function App() {
 			<h3 id='projects'>Projects</h3>
 			<Projects />
 			<h3 id='contact'>Contact</h3>
-            <Footer />
+			<Footer />
 		</div>
 	)
 }
