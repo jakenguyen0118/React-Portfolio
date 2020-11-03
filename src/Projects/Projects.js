@@ -24,15 +24,20 @@ const Projects = () => {
 			let url = project.Link
 			window.open(url, '_blank')
 		}
+
 		return (
 			<>
 				<div className='project' key={index}>
-					<h4>{project.Title}</h4>
 					<img src={project.Image} alt='' />
-					<p>{project.Description}</p>
-					<div>
-						<button onClick={handleLiveClick}>Live App</button>
-						<button onClick={handleRepoClick}>Repo</button>
+					<div className='content'>
+						<h4>{project.Title}</h4>
+						<br />
+						<p>{project.Description}</p>
+						<br />
+						<div>
+							<button onClick={handleLiveClick}>Live App</button>
+							<button onClick={handleRepoClick}>Repo</button>
+						</div>
 					</div>
 				</div>
 			</>

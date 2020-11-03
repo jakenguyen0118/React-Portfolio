@@ -4,52 +4,77 @@
 	font-family: 'Montserrat', sans-serif;
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    height: auto;
 
 	.project:last-child {
 		margin-bottom: 10px;
 	}
 
 	.project {
-		h4 {
-            color: #37393A;
-        }
-        
-        img {
-            width: 320px;
-            border-radius: 10px;
-        }
+		img {
+			width: 320px;
+			height: auto;
+			border-radius: 10px;
+			opacity: 1;
+			transition: 0.5s ease;
+			backface-visibility: hidden;
+		}
 
-		p {
-            color: #37393A;
-            width: 300px;
-            margin: 10px auto;
+		.content {
+            transition: .5s ease;
+            opacity: 0;
+            position: relative;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            text-align: center;
+
+			h4 {
+				color: #37393a;
+            }
+            
+			p {
+				color: #37393a;
+				width: 300px;
+				margin: 10px auto;
+			}
+
+			div {
+				button {
+					margin: 10px;
+					border-style: none;
+					border-radius: 10px;
+					width: 100px;
+					height: 35px;
+					color: #e5e5e5;
+					background-color: #37393a;
+				}
+			}
+        }
+	}
+
+	.project:hover {
+		img {
+			opacity: 0.2;
         }
         
-        div {
-            button {
-                margin: 10px;
-                border-style: none;
-                border-radius: 10px;
-                width: 100px;
-                height: 35px;
-                color: #E5E5E5;
-                background-color: #37393A;
-            }
+        .content {
+            opacity: 1;
         }
-    }
+	}
 }
 
 @media screen and (min-width: 768px) {
 	.projects-container {
 		.project {
 			margin-top: 10px;
-            margin-bottom: 10px;
-            
-            img {
-                width: 450px;
-                margin: 0 auto;
-            }
+			margin-bottom: 10px;
+
+			img {
+				width: 300px;
+				margin: 0 auto;
+			}
 		}
 
 		// .project:nth-child(odd) {
@@ -64,6 +89,7 @@
 
 @media screen and (min-width: 1024px) {
 	.projects-container {
+        grid-template-columns: repeat(3, 1fr);
 		grid-gap: 0;
 
 		.project {
