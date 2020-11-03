@@ -94,19 +94,29 @@ form {
 @media screen and (min-width: 1024px){
     .contact-section {
         display: flex;
-        width: 800px;
+        width: 950px;
         margin: 0 auto;
         height: 500px;
 
         form {
             height: 450px;
+            width: 550px;
             margin-bottom: 30px;
             border-bottom: 1px #37393A solid;
             border-right: none;
+
+            input {
+                width: 400px;
+            }
+
+            textarea {
+                width: 400px;
+            }
         }
 
         .contact-me {
             height: 450px;
+            width: 400px;
             padding-top: 100px;
             padding-bottom: 100px;
 
