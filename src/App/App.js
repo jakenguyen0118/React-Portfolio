@@ -6,6 +6,7 @@ import Landing from '../Landing/Landing'
 import About from '../About/About'
 import Projects from '../Projects/Projects'
 import Footer from '../Footer/Footer'
+import Contact from '../Contact/Contact'
 
 function App() {
 	return (
@@ -15,7 +16,7 @@ function App() {
 			<About />
 			<h3 id='projects'>Projects</h3>
 			<Projects />
-			<h3 id='contact'>Contact</h3>
+			<Contact />
 			<Footer />
 		</div>
 	)

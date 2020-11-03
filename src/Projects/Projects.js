@@ -35,8 +35,8 @@ const Projects = () => {
 						<p>{project.Description}</p>
 						<br />
 						<div>
-							<button onClick={handleLiveClick}>Live App</button>
-							<button onClick={handleRepoClick}>Repo</button>
+							<button onClick={handleLiveClick}>Project</button>
+							<button onClick={handleRepoClick}>Code</button>
 						</div>
 					</div>
 				</div>

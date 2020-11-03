@@ -70,8 +70,12 @@
 			margin-top: 10px;
 			margin-bottom: 10px;
 
+            .content {
+                bottom: 85%;
+            }
+
 			img {
-				width: 300px;
+				width: 375px;
 				margin: 0 auto;
 			}
 		}
@@ -84,7 +88,15 @@
 		grid-gap: 0;
 
 		.project {
-			margin: 10px;
+            margin: 10px;
+
+            .content {
+                bottom: 75%;
+            }
+            
+            img {
+				width: 300px;
+			}
 		}
 	}
 }
