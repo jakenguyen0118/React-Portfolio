@@ -47,6 +47,7 @@ const Contact = () => {
 						name='name'
 						id='name'
 						required='required'
+						onChange={handleInput}
 					/>
 				</div>
 				<div>
@@ -56,6 +57,7 @@ const Contact = () => {
 						name='email'
 						id='email'
 						required='required'
+						onChange={handleInput}
 					/>
 				</div>
 				<div>
@@ -65,6 +67,7 @@ const Contact = () => {
 						id='comments'
 						rows='5'
 						cols='80'
+						onChange={handleInput}
 					/>
 				</div>
 				<button type='submit' className='submit'>
