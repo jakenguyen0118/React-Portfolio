@@ -2,12 +2,7 @@ import React, { useState } from 'react'
 import './contact.scss'
 
 const Contact = () => {
-	const API_KEY = 'AIzaSyBXH9FOC-FMVGIbju0IUCC7dHGRDw9Bw4s'
-	const CLIENT_ID = '470924369966-grg8ag6pu7mrdkbo8qhh6r6glb6f97d1.apps.googleusercontent.com'
-	const SHEET_ID = '1Eg9Dz4orbWH9Ekou5tgKvSdOdl4sSs_lhAij9j2yUGQ'
-	const SCOPE = 'https://www.googleapis.com/auth/spreadsheets'
-
-	const [formData, setFormData] = useState({})
+    const [formData, setFormData] = useState({})
 
 	const handleInput = (e) => {
 		const copyFormData = { ...formData }
@@ -17,10 +12,11 @@ const Contact = () => {
     
     const sendData = async (e) => {
         e.preventDefault()
+        alert('Thank you for reaching out! I will get back to you as soon as I can!')
         const { name, email, message } = formData
         try {
             const response = await fetch(
-                'https://v1.nocodeapi.com/jakenguyen/google_sheets/yYjrkLITpWxhLqFC',
+                'https://v1.nocodeapi.com/jakenguyen/google_sheets/yYjrkLITpWxhLqFC?tabId=Sheet1',
                 {
                     method: 'post',
                     body: JSON.stringify([[name, email, message]]),
