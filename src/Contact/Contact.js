@@ -9,7 +9,7 @@ const Contact = () => {
 		copyFormData[e.target.name] = e.target.value
 		setFormData(copyFormData)
     }
-    
+
     const sendData = async (e) => {
         e.preventDefault()
         alert('Thank you for reaching out! I will get back to you as soon as I can!')
