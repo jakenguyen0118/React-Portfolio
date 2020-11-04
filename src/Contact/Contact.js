@@ -1,10 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contact.scss'
 
 const Contact = () => {
+	const API_KEY = 'AIzaSyBXH9FOC-FMVGIbju0IUCC7dHGRDw9Bw4s'
+	const CLIENT_ID = '470924369966-grg8ag6pu7mrdkbo8qhh6r6glb6f97d1.apps.googleusercontent.com'
+	const SHEET_ID = '1Eg9Dz4orbWH9Ekou5tgKvSdOdl4sSs_lhAij9j2yUGQ'
+	const SCOPE = 'https://www.googleapis.com/auth/spreadsheets'
+
+	const [formData, setFormData] = useState({})
+
+	const handleInput = (e) => {
+		const copyFormData = { ...formData }
+		copyFormData[e.target.name] = e.target.value
+		setFormData(copyFormData)
+    }
+    
+    const sendData = async (e) => {
+        e.preventDefault()
+        const { name, email, message } = formData
+        try {
+            const response = await fetch(
+                'https://v1.nocodeapi.com/jakenguyen/google_sheets/yYjrkLITpWxhLqFC',
+                {
+                    method: 'post',
+                    body: JSON.stringify([[name, email, message]]),
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }
+            )
+            const json = await response.json()
+            console.log('Success:', JSON.stringify(json))
+        } catch (error) {
+            console.error('Error:', error)
+        }
+    }
+
 	return (
 		<div className='contact-section'>
-			<form>
+			<form onSubmit={sendData}>
 				<h3 id='contact'>Contact Me</h3>
 				<div>
 					<input
@@ -19,7 +53,7 @@ const Contact = () => {
 					<input
 						placeholder='Email'
 						type='text'
-						name='name'
+						name='email'
 						id='email'
 						required='required'
 					/>
@@ -27,7 +61,7 @@ const Contact = () => {
 				<div>
 					<textarea
 						placeholder='Leave Your Message Here'
-						name='comments'
+						name='message'
 						id='comments'
 						rows='5'
 						cols='80'
