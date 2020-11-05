@@ -11,14 +11,35 @@ const About = () => {
 			<div className='about-me'>
 				<h3 id='aboutme'>About Me</h3>
 				<div className='jake'>
-					<div
-						className='pic'
-						style={{
-							backgroundImage: 'url(https://i.imgur.com/uCzjr9m.jpg)',
-						}}>
-						{/* <img src='https://i.imgur.com/uCzjr9m.jpg' alt='about pic' /> */}
+					<div className='pic'>
+						<img src='https://i.imgur.com/uCzjr9m.jpg' alt='about pic' />
 					</div>
-					<div>hi</div>
+					<div className='jake-about'>
+						<div className='brand-statement'>
+							<div className='about-hover'>
+								<p className='about-title'>Brand Statement</p>
+								<p></p>
+							</div>
+						</div>
+						<div className='location'>
+							<p className='about-title'>Location</p>
+							<div className='about-hover'>
+								<p>Boston, MA</p>
+							</div>
+						</div>
+						<div className='hobbies'>
+							<div className='about-hover'>
+								<p className='about-title'>Hobbies</p>
+								<p>Video games, FOOD, Netflix</p>
+							</div>
+						</div>
+						<div className='education'>
+							<p className='about-title'>Education</p>
+							<div className='about-hover'>
+								<p>General Assembly - Software Engineering</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div className='skills'>
 					<div>
