@@ -41,10 +41,7 @@ const About = () => {
 						<div className='education'>
 							<p className='about-title'>Education</p>
 							<div className='about-hover'>
-								<img
-									src='https://lh3.googleusercontent.com/proxy/LMJ90-uhi6msQebz2HUjA08IdFVSa3BCxeR1E6PuO7EFikGK0JnF_YAqf1Ywmc_YkzIrG9a6zG1QiTRZlhhgVKfV0YAfm1zXMeRULyN54kPmcFYi8pubT8uxuR3ntCu-9s8'
-									alt='ga icon'
-								/>
+								<img src='https://i.imgur.com/6Ok4Fvf.png' alt='ga icon' />
 								<p>Software Engineering</p>
 							</div>
 						</div>
