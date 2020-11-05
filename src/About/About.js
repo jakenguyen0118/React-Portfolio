@@ -16,9 +16,14 @@ const About = () => {
 					</div>
 					<div className='jake-about'>
 						<div className='brand-statement'>
+							<p className='about-title'>Brand Statement</p>
 							<div className='about-hover'>
-								<p className='about-title'>Brand Statement</p>
-								<p></p>
+								<p>
+									Fast-learning, motivated software engineer with strong
+									analytical skills to problem solve with a creative approach. I
+									love styling to fit and match my simplicity and minimalist
+									preferences.
+								</p>
 							</div>
 						</div>
 						<div className='location'>
@@ -28,15 +33,19 @@ const About = () => {
 							</div>
 						</div>
 						<div className='hobbies'>
+							<p className='about-title'>Hobbies</p>
 							<div className='about-hover'>
-								<p className='about-title'>Hobbies</p>
 								<p>Video games, FOOD, Netflix</p>
 							</div>
 						</div>
 						<div className='education'>
 							<p className='about-title'>Education</p>
 							<div className='about-hover'>
-								<p>General Assembly - Software Engineering</p>
+								<img
+									src='https://lh3.googleusercontent.com/proxy/LMJ90-uhi6msQebz2HUjA08IdFVSa3BCxeR1E6PuO7EFikGK0JnF_YAqf1Ywmc_YkzIrG9a6zG1QiTRZlhhgVKfV0YAfm1zXMeRULyN54kPmcFYi8pubT8uxuR3ntCu-9s8'
+									alt='ga icon'
+								/>
+								<p>Software Engineering</p>
 							</div>
 						</div>
 					</div>
