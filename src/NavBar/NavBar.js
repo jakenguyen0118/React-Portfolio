@@ -28,22 +28,22 @@ const NavBar = () => {
 				<Collapse isOpen={!collapsed} navbar>
 					<Nav className='ml-auto' navbar>
 						<NavItem>
-							<NavLink href='#home'>
+							<NavLink href='#home' onClick={toggleNavbar}>
 								<b className='home-nav'>Home</b>&nbsp;
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href='#aboutme'>
+							<NavLink href='#aboutme' onClick={toggleNavbar}>
 								<b>About</b>&nbsp;
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href='#projects'>
+							<NavLink href='#projects' onClick={toggleNavbar}>
 								<b>Projects</b>&nbsp;
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href='#contact'>
+							<NavLink href='#contact' onClick={toggleNavbar}>
 								<b>Contact</b>&nbsp;
 							</NavLink>
 						</NavItem>
