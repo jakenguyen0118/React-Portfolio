@@ -8,6 +8,11 @@
         font-family: 'Kaushan Script', cursive;
         margin-top: 30px;
         margin-bottom: 30px;
-		color: #55868c;
+        color: #55868c;
+        font-size: 2rem;
     }
+}
+
+html {
+  scroll-behavior: smooth;
 }

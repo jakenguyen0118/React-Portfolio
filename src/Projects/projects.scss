@@ -100,3 +100,16 @@
 		}
 	}
 }
+
+@media screen and (min-width:1440px) {
+	.projects-container {
+		margin-bottom: 50px;
+		.project {
+			height: 400px;
+
+			img {
+				width: 400px;
+			}
+		}
+	}
+}

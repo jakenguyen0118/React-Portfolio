@@ -8,8 +8,8 @@ import postgresqlIcon from '@iconify/icons-logos/postgresql'
 const About = () => {
 	return (
 		<>
-			<div className='about-me'>
-				<h3 id='aboutme'>About Me</h3>
+			<div className='about-me' id='aboutme'>
+				<h3>About Me</h3>
 				<div className='jake'>
 					<div className='pic'>
 						<img src='https://i.imgur.com/uCzjr9m.jpg' alt='about pic' />

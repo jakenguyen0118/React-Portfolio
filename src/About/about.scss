@@ -9,7 +9,7 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin: 10px 20px 10px 20px;
+	margin: 50px 20px 50px 20px;
 
 	div {
 		margin: 8px;
@@ -322,6 +322,7 @@ h3 {
 
 @media screen and (min-width: 1440px) {
     .jake {
+		margin: 40px 20px;
         .pic {
             img {
                 top: 10%;
