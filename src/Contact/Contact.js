@@ -33,9 +33,9 @@ const Contact = () => {
     }
 
 	return (
-		<div className='contact-section'>
+		<div className='contact-section' id='contact'>
 			<form onSubmit={sendData}>
-				<h3 id='contact'>Contact Me</h3>
+				<h3>Contact Me</h3>
 				<div>
 					<input
 						placeholder='Full Name'

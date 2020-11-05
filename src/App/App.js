@@ -13,6 +13,7 @@ function App() {
 		<div className='App'>
 			<NavBar />
 			<Landing />
+			<h3 id='aboutme'>About Me</h3>
 			<About />
 			<h3 id='projects'>Projects</h3>
 			<Projects />
