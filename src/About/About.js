@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.scss'
 import { Icon, InlineIcon } from '@iconify/react'
-import mongodbIcon from '@iconify/icons-logos/mongodb'
+import mongodbIcon from '@iconify-icons/simple-icons/mongodb'
 import languageRubyOnRails from '@iconify/icons-mdi/language-ruby-on-rails'
 import postgresqlIcon from '@iconify/icons-logos/postgresql'
 
@@ -21,8 +21,7 @@ const About = () => {
 								<p>
 									Fast-learning, motivated software engineer with strong
 									analytical skills to problem solve with a creative approach. I
-									love styling to fit and match my simplicity and minimalist
-									preferences.
+									love styling to fit and match my simplicity and minimalism.
 								</p>
 							</div>
 						</div>
