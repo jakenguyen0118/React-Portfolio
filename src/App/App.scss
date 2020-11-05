@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 .App {
-    text-align: center;
-    background-color: #E5E7E6;
+	text-align: center;
+	background-color: #e5e7e6;
 
-    h3 {
-        font-family: 'Kaushan Script', cursive;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        color: #55868c;
-        font-size: 2rem;
-    }
+	h3 {
+		font-family: 'Quicksand', sans-serif;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		color: #55868c;
+		font-size: 2rem;
+	}
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }

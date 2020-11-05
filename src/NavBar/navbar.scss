@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 nav {
-    font-family: 'Caveat', cursive;
-    background-color: #37393A;
+	font-family: 'Quicksand', sans-serif;
+    background-color: #FFFCF7;
 
 	h4 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		color: #55868c;
 
 		span {
             font-size: 1rem;
-            color: #E5E5E5;
+            color: #050609;
 		}
 	}
 
 	a.nav-link {
-		font-size: 1.5rem;
+		font-size: 1rem;
 
 		b {
 			color: #55868c;
@@ -30,15 +30,15 @@ nav {
 @media screen and (min-width: 768px) {
 	nav {
 		h4 {
-			font-size: 2rem;
+			// font-size: 2rem;
 
 			span {
-				font-size: 1.5rem;
+				// font-size: 1.5rem;
 			}
 		}
 
 		a.nav-link {
-			font-size: 1.5rem;
+			// font-size: 1.5rem;
 		}
 	}
 }
@@ -46,15 +46,15 @@ nav {
 @media screen and (min-width: 1440px) {
     nav {
 		h4 {
-			font-size: 2.5rem;
+			// font-size: 2.5rem;
 
 			span {
-				font-size: 1.5rem;
+				// font-size: 1.5rem;
 			}
 		}
 
 		a.nav-link {
-			font-size: 2rem;
+			// font-size: 2rem;
 		}
 	}
 }
