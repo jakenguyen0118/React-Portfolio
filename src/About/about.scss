@@ -216,6 +216,48 @@ h3 {
 				opacity: 1;
 			}
 		}
+
+		.resume {
+			background-image: url('https://images.unsplash.com/photo-1484651890318-ca4110437e20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+			background-repeat: no-repeat, repeat;
+			background-size: cover;
+			background-position: center;
+			width: 390px;
+			height: 125px;
+			margin: 5px auto;
+			opacity: 0.6;
+
+			.about-title {
+				transition: 0.5s ease;
+				margin: 0 auto;
+				position: relative;
+				top: 20%;
+				font-size: 3em;
+				opacity: 1;
+			}
+
+			.about-hover {
+				transition: 0.5s ease;
+				margin: 0 auto;
+				position: relative;
+				top: -35%;
+				opacity: 0;
+
+				p {
+					font-size: 3em;
+				}
+			}
+		}
+
+		.resume:hover {
+			.about-title {
+				opacity: 0;
+			}
+
+			.about-hover {
+				opacity: 1;
+			}
+		}
 	}
 }
 
@@ -253,7 +295,11 @@ h3 {
 
             .hobbies {
 				width: 600px;
-            }
+			}
+			
+			.resume {
+				width: 600px;
+			}
 
             .education {
                 width: 600px;
@@ -313,7 +359,11 @@ h3 {
 
             .education {
                 width: 500px;
-            }
+			}
+			
+			.resume {
+				width: 500px;
+			}
         }
     }
 
@@ -333,8 +383,10 @@ h3 {
     .jake {
 		margin: 40px 20px;
         .pic {
+			display: flex;
+			justify-content: center;
+			align-self: center;
             img {
-				top: 10%;
 				width: 400px;
 				height: 400px;
             }
@@ -347,10 +399,10 @@ h3 {
                 width: 700px;
 
                 .about-hover {
-                    top: -40%;
+                    top: -43%;
 
                     p {
-                        font-size: 1.5em;
+                        font-size: 1.25em;
                     }
                 }
             }
@@ -361,7 +413,11 @@ h3 {
 
             .hobbies {
                 width: 700px;
-            }
+			}
+			
+			.resume {
+				width: 700px;
+			}
 
             .education {
                 width: 700px;
