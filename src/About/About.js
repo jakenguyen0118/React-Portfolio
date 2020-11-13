@@ -25,10 +25,10 @@ const About = () => {
 							<p className='about-title'>Who am I?</p>
 							<div className='about-hover'>
 								<p>
-									Simple and clean designs are my favorite but when it comes to
-									problem solving, I am fascinated by the complexity and
-									intricacies. I am a minimalist at heart, but finding creative
-									approaches to solve a problem is also my specialty.
+									A fast-learning software engineer who can solve everyday
+									problems with creativity and provide a different perspective
+									to everyday problems. Keen eye for simple yet gorgeously
+									crafted web designs.
 								</p>
 							</div>
 						</div>
