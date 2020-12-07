@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './about.scss'
 import { Icon, InlineIcon } from '@iconify/react'
 import mongodbIcon from '@iconify-icons/simple-icons/mongodb'
@@ -54,7 +55,9 @@ const About = () => {
 						<div className='resume'>
 							<p className='about-title'>Resume</p>
 							<div className='about-hover'>
-								<p onClick={linkToResume}>Click to go to Jake's Resume</p>
+								<Link to='/resume.pdf' target='_blank' download>
+									<p className='resume-link'>Download Jake's Resume</p>
+								</Link>
 							</div>
 						</div>
 					</div>
